@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/icon" href="logo.png">
+    <title>Pepsi</title>
+</head>
+<body>
+    <div class="container">
+        <div class="shape"></div>
+        <div class="navbar">
+            <a href="#" class="logo"><img src="logo.png" alt="logo" class="logo"></a>
+            <nav>
+                <ul role="list" class="navbar-items">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="content-text">
+                <h2 class="product-header">Não é apenas uma bebida<br>
+                    É <span>Pepsi!</span>
+                </h2>
+                <p class="product-des">Bem-vindo à página inicial da Pepsi!
+                 <br>Descubra nossas marcas, informações sobre produtos e as últimas novidades da Pepsi. 
+            </p>
+            <a href="https://www.pepsi.pt/" class="link-button">
+                <button class="learn-more">Saiba Mais</button>
+            </a>
+            </div>
+
+            <div class="content-picture">
+                <img src="pepsiazul.png" alt="pepsi" class="pepsi">
+                <div class="socials">
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/PepsiBrasil"><img src="facebook.png" alt=""></li></a>
+                        <li><a href="https://twitter.com/PepsiBr"><img src="twitter.png" alt=""></li></a>
+                        <li><a href="https://www.instagram.com/pepsiglobal/"><img src="instagram.png" alt=""></li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumb">
+            <ul class="product-gallery">
+                <li><img src="./pepsiazul.png" onclick="imgSlide('./pepsiazul.png');changeColors('#004b93')"></li>
+                <li><img src="./pepsicinza.png" onclick="imgSlide('./pepsicinza.png');changeColors('#c3c7c7')"></li>
+                <li><img src="./pepsipreta.png" onclick="imgSlide('./pepsipreta.png');changeColors('black')"></li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <script src="moviment.js"></script>
+</body>
+</html>
